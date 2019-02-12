@@ -20,6 +20,11 @@ module.exports = {
 		'no-debugger': process.env.NODE_ENV === 'production' ? 2 : 0,
 		'semi': ['error', 'always'],
 		'indent': 0,
-		'space-before-function-paren': 0
+		'space-before-function-paren': 0,
+		'no-trailing-spaces': ["error", { "skipBlankLines": true }],
+		'space-infix-ops': 0,
+		'keyword-spacing': 0,
+		'eqeqeq': 0,
+		'no-multiple-empty-lines': ["error", { "max": 2}]
 	}
 }
