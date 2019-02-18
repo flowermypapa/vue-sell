@@ -11,6 +11,7 @@ export function urlParse() {
 	// ['?id=12345', '&a=b']
 	if (arr) {
 		arr.forEach((item) => {
+			// remove ? or & then get key and value
 			let tempArr = item.substring(1).split('=');
 			let key = decodeURIComponent(tempArr[0]);
 			let val = decodeURIComponent(tempArr[1]);
