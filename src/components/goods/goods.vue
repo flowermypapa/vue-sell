@@ -33,9 +33,12 @@
         </li>
       </ul>
     </div>
+  </div>
+  <shopcart v-ref:shopcart :select-foods="selectFoods" :delivery-price="seller.deliveryPrice" :min-price="seller.minPrice"></shopcart>
 </template>
 
 <script type="text/ecmascript-6">
+import shopcart from 'components/shopcart/shopcart.vue';
 const ERR_OK = 0;
 export default {
   name: 'goods',
@@ -57,6 +60,9 @@ export default {
         this.goods = response.data;
       }
 		});
+  },
+  components: {
+    shopcart
   }
 };
 </script>

@@ -13,7 +13,6 @@
 <script>
 import {urlParse} from './common/js/util';
 import vheader from './components/header/vheader.vue';
-
 const ERR_OK = 0;
 
 export default {
